@@ -1,0 +1,32 @@
+<nav class="bg-white shadow-md p-4 flex justify-between items-center">
+  <div class="flex justify-start items-center gap-4">
+      <!-- Logo Section -->
+      <div class="flex items-center space-x-2">
+          <!-- <img src="assets/logo.png" alt="Logo" class="h-8 w-auto"> -->
+          <span class="font-bold text-xl">Brainwave.io</span>
+      </div>
+      <!-- Links Section -->
+      <div class="hidden md:flex items-center space-x-6">
+          <a href="#" class="text-gray-700 hover:text-blue-600 transition">Demos</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 transition">Pages</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 transition">Support</a>
+          <a routerLink="/contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+      </div>
+  </div>
+  <a href="#"
+      class="hidden md:block bg-blue-600 text-white px-6 py-3 font-semibold text-lg rounded-lg hover:bg-blue-700 transition">
+      Get started a project
+  </a>
+  <!-- Mobile Menu Button (Hamburger Icon) -->
+  <div class="md:hidden">
+      <button class="text-gray-700 hover:text-blue-600 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+              </path>
+          </svg>
+      </button>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

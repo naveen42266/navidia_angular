@@ -1,0 +1,65 @@
+<div class="max-w-4xl mx-auto p-6 m-6 bg-white shadow-none md:shadow-md rounded-none md:rounded-lg">
+  <h2 class="text-2xl font-bold text-center mb-6">Contact Form</h2>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <!-- First Name -->
+    <div class="mb-4">
+      <label for="first_name" class="block text-gray-700 font-bold mb-2">First Name</label>
+      <input type="text" id="first_name" placeholder="Enter First Name" formControlName="first_name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Last Name -->
+    <div class="mb-4">
+      <label for="last_name" class="block text-gray-700 font-bold mb-2">Last Name</label>
+      <input type="text" id="last_name" placeholder="Enter Last Name" formControlName="last_name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Email ID -->
+    <div class="mb-4">
+      <label for="emailId" class="block text-gray-700 font-bold mb-2">Email</label>
+      <input type="email" id="emailId" placeholder="Enter Email ID" formControlName="emailId" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Age -->
+    <div class="mb-4">
+      <label for="age" class="block text-gray-700 font-bold mb-2">Age</label>
+      <input type="number" id="age" placeholder="Enter Age" formControlName="age" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Gender -->
+    <div class="mb-4">
+      <label for="gender" class="block text-gray-700 font-bold mb-2">Gender</label>
+      <select id="gender" formControlName="gender" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <!-- Mobile Number -->
+    <div class="mb-4">
+      <label for="mobilenumber" class="block text-gray-700 font-bold mb-2">Mobile Number</label>
+      <input type="tel" id="mobilenumber" placeholder="Enter Mobile Number" formControlName="mobilenumber" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- PAN No -->
+    <div class="mb-4">
+      <label for="pan_no" class="block text-gray-700 font-bold mb-2">PAN Number</label>
+      <input type="text" id="pan_no" placeholder="Enter PAN Number" formControlName="pan_no" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Aadhar No -->
+    <div class="mb-4">
+      <label for="adhaar_no" class="block text-gray-700 font-bold mb-2">Aadhar Number</label>
+      <input type="text" id="adhaar_no" placeholder="Enter Aadhar Number" formControlName="adhaar_no" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Submit Button -->
+    <div class="mt-6">
+      <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
